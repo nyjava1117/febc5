@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titleText" class="">Hello World</h1>
+    <div id="greetings">Abc1234</div>
+    <button onclick="hideElement()" id="changeBtn">Hide Element</button>
+    <button onclick="addElement()">Add Element</button>
+    <div id="results"></div>
+    <script src="script.js"></script>
+    <script>
+        function addElement(){
+            let newElement = document.createElement("p");
+            newElement.innerHTML = "Hello World";
+            let result = document.getElementById('results');
+            result.appendChild(newElement);
+
+        }
+    </script>
+    <!--  Events
+        ทุกๆ Element สามารถมี Event อะไรบางอย่างได้
+     -->  
+        
+     <!----
+     1. เราสามารถสร้าง Element ใหม่ได้แล้ว
+     2. เราจะเพิ่มข้อความลงไปใน Element ใหม่ที่สร้าง
+     3. เราสามารถเรียก Element ที่อยากจะเพิ่มข้อมูลได้แก่
+
+     
+     -->
+</body>
+</html>
